@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: Assignment_3-service
+spec:
+  selector:
+    app: Assignment_3
+  ports:
+  - protocol: "TCP"
+    port: 9000
+    targetPort: 8080
+  type: LoadBalancer
+
