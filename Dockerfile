@@ -1,9 +1,5 @@
-FROM python:3.8.5
-
-RUN mkdir /app
-WORKDIR /app
-ADD . /app/
+FROM python:latest
 RUN pip install -r requirements.txt
 
 EXPOSE 5000
-CMD ["python", "/app/main.py"]
+CMD ["python", "main.py"]
