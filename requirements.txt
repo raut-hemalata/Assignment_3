@@ -1,6 +1,5 @@
 GeoPy
 Flask
 Nominatim
-socket
-pendulum
+Pendulum
 
