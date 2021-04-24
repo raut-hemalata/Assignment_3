@@ -9,7 +9,7 @@ spec:
   - protocol: "TCP"
     port: 6000
     targetPort: 5000
-  type: LoadBalancer
+  type: NodePort
 
 
 ---
@@ -18,7 +18,7 @@ kind: Deployment
 metadata:
   name: test
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: test
@@ -32,7 +32,7 @@ spec:
         image: test:latest
         imagePullPolicy: Never
         ports:
-        - containerPort: 6000
+        - containerPort: 5000
         resources:
           requests:
             cpu: "0.3"
