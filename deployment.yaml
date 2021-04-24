@@ -19,6 +19,9 @@ metadata:
   name: test
 spec:
   replicas: 4
+  selector:
+    matchLabels:
+      app: test
   template:
     metadata:
       labels:
