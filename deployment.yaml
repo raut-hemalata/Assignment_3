@@ -32,7 +32,7 @@ spec:
         image: test:latest
         imagePullPolicy: Never
         ports:
-        - containerPort: 5000
+        - containerPort: 6000
         resources:
           requests:
             cpu: "0.3"
