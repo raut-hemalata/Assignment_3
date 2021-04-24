@@ -1,5 +1,5 @@
 FROM python:latest
+COPY requirements.txt .
 RUN pip install -r requirements.txt
-
-EXPOSE 5000
-CMD ["python", "main.py"]
+CMD ["main.py"]
+ENTRYPOINT ["python"]
