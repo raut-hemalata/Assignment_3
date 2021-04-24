@@ -1,0 +1,12 @@
+a piVersion: v1
+kind: Service
+metadata:
+  name: test
+spec:
+  selector:
+    app: test
+  ports:
+  - protocol: "TCP"
+    port: 80
+    targetPort: 8080
+  type: NodePort
