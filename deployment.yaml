@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: test
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: test
@@ -17,7 +17,7 @@ spec:
         image: test:latest
         imagePullPolicy: Never
         ports:
-        - containerPort: 8080
+        - containerPort: 5000
        resources:
           requests:
             cpu: 200m
