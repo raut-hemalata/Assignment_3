@@ -25,9 +25,9 @@ print("Country :",country)
 @app.route("/")
 def index():
     return render_template("index.html")
-@app.route("/pucsd")
+@app.route("/pucsdian")
 def pucsd():
-    return render_template("pucsd.html",content1=Time,content2=hostname,content3=ip_address,content4=city,content5=state,content6=country)
+    return render_template("pucsdian.html",content1=Time,content2=hostname,content3=ip_address,content4=city,content5=state,content6=country)
 if __name__ == "__main__":
     #app.run(host='0.0.0.0')
     app.run(debug=True)
