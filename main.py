@@ -8,8 +8,8 @@ Time=pendulum.now(ist)
 hostname = socket.gethostname()
 ip_address = socket.gethostbyname(hostname)
 print("Current Time in IST : ",Time)
-print(f"IP Address: {ip_address}")
-print(f"Hostname: {hostname}")
+print("IP Address:", ip_address)
+print("Hostname: ",hostname)
 geolocator = Nominatim(user_agent="geoapiExercises")
 Latitude = "18.5204"
 Longitude = "73.8567"
