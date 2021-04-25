@@ -35,3 +35,16 @@ spec:
         resources:
           requests:
             cpu: 200m
+---
+apiVersion: v1
+data:
+  index.html: |
+    Welcome to PUCSD !
+kind: ConfigMap
+metadata:
+  name: myapp-config
+volumnes:
+  -name: myapp-config
+   ConfigMap:
+      name: myconfigmap
+
